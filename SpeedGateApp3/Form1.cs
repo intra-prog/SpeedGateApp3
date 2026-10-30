@@ -245,7 +245,7 @@ namespace SpeedGateApp3
                         cmd.Parameters.AddWithValue("@m", matriculaPendiente);
                         cmd.Parameters.AddWithValue("@n", txtNom.Text.Trim());
                         cmd.Parameters.AddWithValue("@ap", txtAp1.Text.Trim());
-                        cmd.Parameters.AddWithValue("@am", txtAp2.Text.Trim());
+                        cmd.Parameters.AddWithValue("@am", txtAp2.Text.TrimX());
                         cmd.Parameters.AddWithValue("@idc", cbCarrera.SelectedIndex + 1);
                         cmd.ExecuteNonQuery();
                     }
