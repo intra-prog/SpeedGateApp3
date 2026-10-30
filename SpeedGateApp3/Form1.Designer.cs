@@ -30,20 +30,21 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.pnlStatus = new System.Windows.Forms.Panel();
+            this.lblStatusMsg4 = new System.Windows.Forms.Label();
+            this.lblStatusMsg3 = new System.Windows.Forms.Label();
+            this.lblStatusMsg2 = new System.Windows.Forms.Label();
             this.lblStatusMsg1 = new System.Windows.Forms.Label();
             this.txtMatricula = new System.Windows.Forms.TextBox();
             this.cbMotivo = new System.Windows.Forms.ComboBox();
             this.lblTitle = new System.Windows.Forms.Label();
             this.lblMotivo = new System.Windows.Forms.Label();
             this.lblInstruccion = new System.Windows.Forms.Label();
-            this.lblStatusMsg2 = new System.Windows.Forms.Label();
-            this.lblStatusMsg3 = new System.Windows.Forms.Label();
-            this.lblStatusMsg4 = new System.Windows.Forms.Label();
             this.pnlStatus.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlStatus
             // 
+            this.pnlStatus.BackColor = System.Drawing.Color.WhiteSmoke;
             this.pnlStatus.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlStatus.Controls.Add(this.lblStatusMsg4);
             this.pnlStatus.Controls.Add(this.lblStatusMsg3);
@@ -51,8 +52,39 @@
             this.pnlStatus.Controls.Add(this.lblStatusMsg1);
             this.pnlStatus.Location = new System.Drawing.Point(241, 295);
             this.pnlStatus.Name = "pnlStatus";
-            this.pnlStatus.Size = new System.Drawing.Size(1563, 671);
+            this.pnlStatus.Size = new System.Drawing.Size(1516, 358);
             this.pnlStatus.TabIndex = 0;
+            // 
+            // lblStatusMsg4
+            // 
+            this.lblStatusMsg4.AutoSize = true;
+            this.lblStatusMsg4.Font = new System.Drawing.Font("Impact", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStatusMsg4.Location = new System.Drawing.Point(634, 259);
+            this.lblStatusMsg4.Name = "lblStatusMsg4";
+            this.lblStatusMsg4.Size = new System.Drawing.Size(43, 59);
+            this.lblStatusMsg4.TabIndex = 10;
+            this.lblStatusMsg4.Text = "..";
+            // 
+            // lblStatusMsg3
+            // 
+            this.lblStatusMsg3.AutoSize = true;
+            this.lblStatusMsg3.Font = new System.Drawing.Font("Impact", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStatusMsg3.Location = new System.Drawing.Point(562, 192);
+            this.lblStatusMsg3.Name = "lblStatusMsg3";
+            this.lblStatusMsg3.Size = new System.Drawing.Size(29, 37);
+            this.lblStatusMsg3.TabIndex = 8;
+            this.lblStatusMsg3.Text = "..";
+            // 
+            // lblStatusMsg2
+            // 
+            this.lblStatusMsg2.AutoSize = true;
+            this.lblStatusMsg2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.lblStatusMsg2.Font = new System.Drawing.Font("Impact", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStatusMsg2.Location = new System.Drawing.Point(635, 86);
+            this.lblStatusMsg2.Name = "lblStatusMsg2";
+            this.lblStatusMsg2.Size = new System.Drawing.Size(39, 54);
+            this.lblStatusMsg2.TabIndex = 7;
+            this.lblStatusMsg2.Text = "..";
             // 
             // lblStatusMsg1
             // 
@@ -88,6 +120,7 @@
             // lblTitle
             // 
             this.lblTitle.AutoSize = true;
+            this.lblTitle.BackColor = System.Drawing.Color.Transparent;
             this.lblTitle.Font = new System.Drawing.Font("Impact", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.Location = new System.Drawing.Point(731, 28);
             this.lblTitle.Name = "lblTitle";
@@ -116,40 +149,12 @@
             this.lblInstruccion.TabIndex = 5;
             this.lblInstruccion.Text = "Acerque el código QR o escriba la matrícula:";
             // 
-            // lblStatusMsg2
-            // 
-            this.lblStatusMsg2.AutoSize = true;
-            this.lblStatusMsg2.Font = new System.Drawing.Font("Impact", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStatusMsg2.Location = new System.Drawing.Point(506, 75);
-            this.lblStatusMsg2.Name = "lblStatusMsg2";
-            this.lblStatusMsg2.Size = new System.Drawing.Size(72, 98);
-            this.lblStatusMsg2.TabIndex = 7;
-            this.lblStatusMsg2.Text = "..";
-            // 
-            // lblStatusMsg3
-            // 
-            this.lblStatusMsg3.AutoSize = true;
-            this.lblStatusMsg3.Font = new System.Drawing.Font("Impact", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStatusMsg3.Location = new System.Drawing.Point(297, 277);
-            this.lblStatusMsg3.Name = "lblStatusMsg3";
-            this.lblStatusMsg3.Size = new System.Drawing.Size(29, 37);
-            this.lblStatusMsg3.TabIndex = 8;
-            this.lblStatusMsg3.Text = "..";
-            // 
-            // lblStatusMsg4
-            // 
-            this.lblStatusMsg4.AutoSize = true;
-            this.lblStatusMsg4.Font = new System.Drawing.Font("Impact", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStatusMsg4.Location = new System.Drawing.Point(499, 456);
-            this.lblStatusMsg4.Name = "lblStatusMsg4";
-            this.lblStatusMsg4.Size = new System.Drawing.Size(43, 59);
-            this.lblStatusMsg4.TabIndex = 10;
-            this.lblStatusMsg4.Text = "..";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1853, 1009);
             this.Controls.Add(this.lblInstruccion);
             this.Controls.Add(this.lblMotivo);

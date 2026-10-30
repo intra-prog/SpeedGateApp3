@@ -9,6 +9,10 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient; // El paquete que acabas de instalar
 
+
+
+
+
 // [FPGA] 1. Librería del puerto serial (Descomentar después)
 // using System.IO.Ports; 
 
@@ -245,7 +249,7 @@ namespace SpeedGateApp3
                         cmd.Parameters.AddWithValue("@m", matriculaPendiente);
                         cmd.Parameters.AddWithValue("@n", txtNom.Text.Trim());
                         cmd.Parameters.AddWithValue("@ap", txtAp1.Text.Trim());
-                        cmd.Parameters.AddWithValue("@am", txtAp2.Text.TrimX());
+                        cmd.Parameters.AddWithValue("@am", txtAp2.Text.Trim());
                         cmd.Parameters.AddWithValue("@idc", cbCarrera.SelectedIndex + 1);
                         cmd.ExecuteNonQuery();
                     }
